@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/930a56ecd3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+       
+
+        <ul class="menu1">
+            <li>
+                <a href=""> <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#section1"><i class="fa-solid fa-gear"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#section2"><i class="fa-solid fa-umbrella-beach"></i>
+                </a>
+            </li>
+        </ul>
+    
+
+
+        <div class="button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="imp">
+            <div class="intro">
+                <h1>K SIVABALAN</h1>
+                <p>Hi,I am currently persuing BE CSE and I am intrested in SOFTWARE DEVELOPMENT and also intrested
+                    in the field of FULLSTACK development, I have basic knowledge on HTML and CSS and JAVA SCRIPTand
+                    also intreste to develop my webpages using BLOCK CHAIN</p>
+            </div>
+            <div class="image">
+                <img src="./images/head.png" alt="">
+            </div>
+        </div>
+        <div class="skills" id="section1">
+            <div class="img1 imag">
+                <i class="fa-brands fa-css3"></i>
+                <h3>CSS</h3>
+            </div>
+            <div class="img1 imag">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="img1 imag">
+                <i class="fa-brands fa-js"></i>
+                <h3>JAVA SCRIPT</h3>
+            </div>
+
+
+
+
+        </div>
+        <div class="skills skills1">
+            <div class="img1 imag">
+                <i class="fa-solid fa-c"></i>
+                <h3>C</h3>
+            </div>
+            <div class="img1 imag">
+                <i class="fa-brands fa-java"></i>
+                <h3>JAVA</h3>
+            </div>
+            <div class="img1 imag">
+                <i class="fa-brands fa-python"></i>
+                <h3>PYTHON</h3>
+            </div>
+
+
+
+
+        </div>
+        <div class="full" id="section2">
+
+            <div class="contact">
+
+                <div class="head">
+                    <h1>contact me</h1>
+                </div>
+
+
+
+                <div class="content">
+                    <h3 id="hh1">mail:sivamr2002@gmail.com </h3>
+                    <h3 id="hh2">phone:123456789</h3>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <script>
+        let btn = document.querySelector('.button');
+        btn.addEventListener("click", move)
+        function move() {
+            console.log("click")
+            let sim = document.querySelector(".menu1");
+            if (sim.style.transform === "none") {
+                sim.style.transform = "translateY(-100%)";
+            }
+            else {
+                sim.style.transform = "none";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
